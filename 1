@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int entery1,entery2,entery3;
+    printf("enter 3 positive int: ");
+scanf("%d %d %d",&entery1,&entery2,&entery3);
+    while (entery1<=0||entery2<=0||entery3<=0)
+    {
+        printf("enter 3 positive int: ");
+scanf("%d %d %d",&entery1,&entery2,&entery3);
+    }
+    if(entery1>entery2&&entery1>entery3)
+    {
+        if(entery2*entery2+entery3*entery3==entery1*entery1)
+        {
+            printf("Yes!");
+        }
+        else{printf("No");}
+    }
+    if(entery2>entery1&&entery2>entery3)
+    {
+        if(entery1*entery1+entery3*entery3==entery2*entery2)
+        {
+            printf("Yes!");
+        }
+        else{printf("No");}
+    }
+    if(entery3>entery1&&entery3>entery2)
+    {
+        if(entery1*entery1+entery2*entery2==entery3*entery3)
+        {
+            printf("Yes!");
+        }
+        else{printf("No");}
+    }
+
+}
